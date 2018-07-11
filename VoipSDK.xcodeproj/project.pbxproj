@@ -1,0 +1,1023 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		D0A04D6920E4B16C00749A7B /* voipFramework */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = D0A04D6A20E4B16E00749A7B /* Build configuration list for PBXAggregateTarget "voipFramework" */;
+			buildPhases = (
+				D0A04D6D20E4B17300749A7B /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = voipFramework;
+			productName = voipFramework;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		D0042F261E0BC5670051F721 /* RGBColorAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = D0042F241E0BC5670051F721 /* RGBColorAPI.h */; };
+		D0042F411E138A2B0051F721 /* DWRipplesLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = D0042F3F1E138A2B0051F721 /* DWRipplesLayer.h */; };
+		D0042F421E138A2B0051F721 /* DWRipplesLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = D0042F401E138A2B0051F721 /* DWRipplesLayer.m */; };
+		D0042F4B1E13AEE90051F721 /* MobileAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = D0042F491E13AEE80051F721 /* MobileAPI.h */; };
+		D0042F4C1E13AEE90051F721 /* MobileAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = D0042F4A1E13AEE80051F721 /* MobileAPI.m */; };
+		D015493F1E499E10004642B6 /* FloatingWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = D015493D1E499E10004642B6 /* FloatingWindow.h */; };
+		D01549401E499E10004642B6 /* FloatingWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = D015493E1E499E10004642B6 /* FloatingWindow.m */; };
+		D01BF3ED1EEA4E81009302B7 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D01BF3EC1EEA4E81009302B7 /* SystemConfiguration.framework */; };
+		D01BF3F11EEA4F06009302B7 /* WiFiUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = D01BF3EF1EEA4F06009302B7 /* WiFiUtils.h */; };
+		D01BF3F21EEA4F06009302B7 /* WiFiUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = D01BF3F01EEA4F06009302B7 /* WiFiUtils.m */; };
+		D01DEF441F04948D006C744B /* NSData+AES.h in Headers */ = {isa = PBXBuildFile; fileRef = D01DEF431F04948D006C744B /* NSData+AES.h */; };
+		D01DEF461F049492006C744B /* NSData+AES.m in Sources */ = {isa = PBXBuildFile; fileRef = D01DEF451F049492006C744B /* NSData+AES.m */; };
+		D01DEF481F0494B3006C744B /* GTMBase64.h in Headers */ = {isa = PBXBuildFile; fileRef = D01DEF471F0494B3006C744B /* GTMBase64.h */; };
+		D01DEF4A1F0494B7006C744B /* GTMBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = D01DEF491F0494B7006C744B /* GTMBase64.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		D01DEF4C1F0494C4006C744B /* GTMDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = D01DEF4B1F0494C4006C744B /* GTMDefines.h */; };
+		D026A4711E76936E00EABB4E /* PjsipManager.h in Headers */ = {isa = PBXBuildFile; fileRef = D026A46F1E76936E00EABB4E /* PjsipManager.h */; };
+		D026A4721E76936E00EABB4E /* PjsipManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D026A4701E76936E00EABB4E /* PjsipManager.m */; };
+		D026A4781E7FD6A300EABB4E /* MyPjsipService.h in Headers */ = {isa = PBXBuildFile; fileRef = D026A4761E7FD6A300EABB4E /* MyPjsipService.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D026A4791E7FD6A300EABB4E /* MyPjsipService.m in Sources */ = {isa = PBXBuildFile; fileRef = D026A4771E7FD6A300EABB4E /* MyPjsipService.m */; };
+		D026A47C1E80F68100EABB4E /* SoftPhoneDialViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = D026A47A1E80F68100EABB4E /* SoftPhoneDialViewController.h */; };
+		D026A47D1E80F68100EABB4E /* SoftPhoneDialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D026A47B1E80F68100EABB4E /* SoftPhoneDialViewController.m */; };
+		D06A703520EF1A5C00D24770 /* VoipSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = D06A703420EF1A5C00D24770 /* VoipSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D06A72B920EF1CA000D24770 /* libpj-apple-darwin.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D06A717720EF1C9F00D24770 /* libpj-apple-darwin.a */; };
+		D06A72BA20EF1CA000D24770 /* libpjlib-util-apple-darwin.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D06A717920EF1C9F00D24770 /* libpjlib-util-apple-darwin.a */; };
+		D06A72BB20EF1CA000D24770 /* libpjmedia-audiodev.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D06A717B20EF1C9F00D24770 /* libpjmedia-audiodev.a */; };
+		D06A72BC20EF1CA000D24770 /* libpjmedia-codec.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D06A717C20EF1C9F00D24770 /* libpjmedia-codec.a */; };
+		D06A72BD20EF1CA000D24770 /* libpjmedia-videodev.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D06A717D20EF1C9F00D24770 /* libpjmedia-videodev.a */; };
+		D06A72BE20EF1CA000D24770 /* libpjmedia.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D06A717E20EF1C9F00D24770 /* libpjmedia.a */; };
+		D06A72BF20EF1CA000D24770 /* libpjsdp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D06A717F20EF1C9F00D24770 /* libpjsdp.a */; };
+		D06A72C020EF1CA000D24770 /* libpjnath.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D06A718120EF1C9F00D24770 /* libpjnath.a */; };
+		D06A72C120EF1CA000D24770 /* libpjsip-simple.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D06A718320EF1C9F00D24770 /* libpjsip-simple.a */; };
+		D06A72C220EF1CA000D24770 /* libpjsip-ua.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D06A718420EF1C9F00D24770 /* libpjsip-ua.a */; };
+		D06A72C320EF1CA000D24770 /* libpjsip.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D06A718520EF1C9F00D24770 /* libpjsip.a */; };
+		D06A72C420EF1CA000D24770 /* libpjsua.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D06A718620EF1C9F00D24770 /* libpjsua.a */; };
+		D06A72C520EF1CA000D24770 /* libpjsua2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D06A718720EF1C9F00D24770 /* libpjsua2.a */; };
+		D06A72C620EF1CA000D24770 /* libg7221codec.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D06A718920EF1C9F00D24770 /* libg7221codec.a */; };
+		D06A72C720EF1CA000D24770 /* libgsmcodec.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D06A718A20EF1C9F00D24770 /* libgsmcodec.a */; };
+		D06A72C820EF1CA000D24770 /* libilbccodec.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D06A718B20EF1C9F00D24770 /* libilbccodec.a */; };
+		D06A72C920EF1CA000D24770 /* libresample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D06A718C20EF1C9F00D24770 /* libresample.a */; };
+		D06A72CA20EF1CA000D24770 /* libspeex.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D06A718D20EF1C9F00D24770 /* libspeex.a */; };
+		D06A72CB20EF1CA000D24770 /* libsrtp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D06A718E20EF1C9F00D24770 /* libsrtp.a */; };
+		D06A72E920EF37A100D24770 /* LocalConnection.h in Headers */ = {isa = PBXBuildFile; fileRef = D06A72CE20EF37A100D24770 /* LocalConnection.h */; };
+		D06A72EA20EF37A100D24770 /* LocalConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = D06A72CF20EF37A100D24770 /* LocalConnection.m */; };
+		D06A72EB20EF37A100D24770 /* FSMDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = D06A72D120EF37A100D24770 /* FSMDefines.h */; };
+		D06A72EC20EF37A100D24770 /* FSMEngine.h in Headers */ = {isa = PBXBuildFile; fileRef = D06A72D220EF37A100D24770 /* FSMEngine.h */; };
+		D06A72ED20EF37A100D24770 /* FSMEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = D06A72D320EF37A100D24770 /* FSMEngine.m */; };
+		D06A72EE20EF37A100D24770 /* FSMStateUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = D06A72D420EF37A100D24770 /* FSMStateUtil.h */; };
+		D06A72EF20EF37A100D24770 /* FSMStateUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = D06A72D520EF37A100D24770 /* FSMStateUtil.m */; };
+		D06A72F020EF37A100D24770 /* ReachState.h in Headers */ = {isa = PBXBuildFile; fileRef = D06A72D620EF37A100D24770 /* ReachState.h */; };
+		D06A72F120EF37A100D24770 /* ReachState.m in Sources */ = {isa = PBXBuildFile; fileRef = D06A72D720EF37A100D24770 /* ReachState.m */; };
+		D06A72F220EF37A100D24770 /* ReachStateLoading.h in Headers */ = {isa = PBXBuildFile; fileRef = D06A72D820EF37A100D24770 /* ReachStateLoading.h */; };
+		D06A72F320EF37A100D24770 /* ReachStateLoading.m in Sources */ = {isa = PBXBuildFile; fileRef = D06A72D920EF37A100D24770 /* ReachStateLoading.m */; };
+		D06A72F420EF37A100D24770 /* ReachStateUnloaded.h in Headers */ = {isa = PBXBuildFile; fileRef = D06A72DA20EF37A100D24770 /* ReachStateUnloaded.h */; };
+		D06A72F520EF37A100D24770 /* ReachStateUnloaded.m in Sources */ = {isa = PBXBuildFile; fileRef = D06A72DB20EF37A100D24770 /* ReachStateUnloaded.m */; };
+		D06A72F620EF37A100D24770 /* ReachStateUnReachable.h in Headers */ = {isa = PBXBuildFile; fileRef = D06A72DC20EF37A100D24770 /* ReachStateUnReachable.h */; };
+		D06A72F720EF37A100D24770 /* ReachStateUnReachable.m in Sources */ = {isa = PBXBuildFile; fileRef = D06A72DD20EF37A100D24770 /* ReachStateUnReachable.m */; };
+		D06A72F820EF37A100D24770 /* ReachStateWIFI.h in Headers */ = {isa = PBXBuildFile; fileRef = D06A72DE20EF37A100D24770 /* ReachStateWIFI.h */; };
+		D06A72F920EF37A100D24770 /* ReachStateWIFI.m in Sources */ = {isa = PBXBuildFile; fileRef = D06A72DF20EF37A100D24770 /* ReachStateWIFI.m */; };
+		D06A72FA20EF37A100D24770 /* ReachStateWWAN.h in Headers */ = {isa = PBXBuildFile; fileRef = D06A72E020EF37A100D24770 /* ReachStateWWAN.h */; };
+		D06A72FB20EF37A100D24770 /* ReachStateWWAN.m in Sources */ = {isa = PBXBuildFile; fileRef = D06A72E120EF37A100D24770 /* ReachStateWWAN.m */; };
+		D06A72FC20EF37A100D24770 /* PingFoundation.h in Headers */ = {isa = PBXBuildFile; fileRef = D06A72E320EF37A100D24770 /* PingFoundation.h */; };
+		D06A72FD20EF37A100D24770 /* PingFoundation.m in Sources */ = {isa = PBXBuildFile; fileRef = D06A72E420EF37A100D24770 /* PingFoundation.m */; };
+		D06A72FE20EF37A100D24770 /* PingHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = D06A72E520EF37A100D24770 /* PingHelper.h */; };
+		D06A72FF20EF37A100D24770 /* PingHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = D06A72E620EF37A100D24770 /* PingHelper.m */; };
+		D06A730020EF37A100D24770 /* RealReachability.h in Headers */ = {isa = PBXBuildFile; fileRef = D06A72E720EF37A100D24770 /* RealReachability.h */; };
+		D06A730120EF37A100D24770 /* RealReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = D06A72E820EF37A100D24770 /* RealReachability.m */; };
+		D08657A51E713A10003327D5 /* Utility.h in Headers */ = {isa = PBXBuildFile; fileRef = D08657A31E713A10003327D5 /* Utility.h */; };
+		D08657A61E713A10003327D5 /* Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = D08657A41E713A10003327D5 /* Utility.m */; };
+		D09814661DE4244E0034F5BA /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D09814651DE4244E0034F5BA /* CFNetwork.framework */; };
+		D098148E1DED5C160034F5BA /* icons in Resources */ = {isa = PBXBuildFile; fileRef = D098148D1DED5C160034F5BA /* icons */; };
+		D098149A1DED6AD40034F5BA /* ImageAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = D09814981DED6AD40034F5BA /* ImageAPI.h */; };
+		D098149B1DED6AD40034F5BA /* ImageAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = D09814991DED6AD40034F5BA /* ImageAPI.m */; };
+		D0CB18781DDC497700F344B4 /* VoipSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0CB186D1DDC497700F344B4 /* VoipSDK.framework */; };
+		D0CB187D1DDC497700F344B4 /* VoipSDKTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D0CB187C1DDC497700F344B4 /* VoipSDKTests.m */; };
+		D0CB1B311DDD7BDB00F344B4 /* Constants.h in Headers */ = {isa = PBXBuildFile; fileRef = D0CB1B2F1DDD7BDB00F344B4 /* Constants.h */; };
+		D0CB1B321DDD7BDB00F344B4 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = D0CB1B301DDD7BDB00F344B4 /* Constants.m */; };
+		D0CB1CB01DDDA45D00F344B4 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0CB1CAF1DDDA45D00F344B4 /* Storyboard.storyboard */; };
+		D0CB24991DE3F18200F344B4 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0CB24981DE3F18200F344B4 /* AudioToolbox.framework */; };
+		D0CB249B1DE3F19100F344B4 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0CB249A1DE3F19100F344B4 /* AVFoundation.framework */; };
+		D0CD7B0F1E0A78B100BF619F /* MyCallCollectionViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = D0CD7B0C1E0A78B100BF619F /* MyCallCollectionViewCell.h */; };
+		D0CD7B101E0A78B100BF619F /* MyCallCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D0CD7B0D1E0A78B100BF619F /* MyCallCollectionViewCell.m */; };
+		D0CD7B111E0A78B100BF619F /* MyCallCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D0CD7B0E1E0A78B100BF619F /* MyCallCollectionViewCell.xib */; };
+		D0F7807C20ECD9A800BE7FEE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0F7807B20ECD9A800BE7FEE /* Foundation.framework */; };
+		D0FE4E7D1E2762B000C9D61F /* IncomingCallViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = D0FE4E7C1E2762B000C9D61F /* IncomingCallViewController.h */; };
+		D0FE4E7F1E2762B500C9D61F /* IncomingCallViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0FE4E7E1E2762B500C9D61F /* IncomingCallViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D0CB18791DDC497700F344B4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D0CB18641DDC497700F344B4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D0CB186C1DDC497700F344B4;
+			remoteInfo = VoipSDK;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D0042F241E0BC5670051F721 /* RGBColorAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RGBColorAPI.h; sourceTree = "<group>"; };
+		D0042F3F1E138A2B0051F721 /* DWRipplesLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DWRipplesLayer.h; sourceTree = "<group>"; };
+		D0042F401E138A2B0051F721 /* DWRipplesLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DWRipplesLayer.m; sourceTree = "<group>"; };
+		D0042F491E13AEE80051F721 /* MobileAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MobileAPI.h; sourceTree = "<group>"; };
+		D0042F4A1E13AEE80051F721 /* MobileAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MobileAPI.m; sourceTree = "<group>"; };
+		D01045E51E27750200CFB317 /* VoipSDK.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VoipSDK.pch; sourceTree = SOURCE_ROOT; };
+		D015493D1E499E10004642B6 /* FloatingWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FloatingWindow.h; sourceTree = "<group>"; };
+		D015493E1E499E10004642B6 /* FloatingWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FloatingWindow.m; sourceTree = "<group>"; };
+		D01BF3EC1EEA4E81009302B7 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		D01BF3EF1EEA4F06009302B7 /* WiFiUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WiFiUtils.h; sourceTree = "<group>"; };
+		D01BF3F01EEA4F06009302B7 /* WiFiUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WiFiUtils.m; sourceTree = "<group>"; };
+		D01DEF431F04948D006C744B /* NSData+AES.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+AES.h"; sourceTree = "<group>"; };
+		D01DEF451F049492006C744B /* NSData+AES.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+AES.m"; sourceTree = "<group>"; };
+		D01DEF471F0494B3006C744B /* GTMBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMBase64.h; sourceTree = "<group>"; };
+		D01DEF491F0494B7006C744B /* GTMBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMBase64.m; sourceTree = "<group>"; };
+		D01DEF4B1F0494C4006C744B /* GTMDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMDefines.h; sourceTree = "<group>"; };
+		D026A46F1E76936E00EABB4E /* PjsipManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PjsipManager.h; sourceTree = "<group>"; };
+		D026A4701E76936E00EABB4E /* PjsipManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PjsipManager.m; sourceTree = "<group>"; };
+		D026A4761E7FD6A300EABB4E /* MyPjsipService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyPjsipService.h; sourceTree = "<group>"; };
+		D026A4771E7FD6A300EABB4E /* MyPjsipService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyPjsipService.m; sourceTree = "<group>"; };
+		D026A47A1E80F68100EABB4E /* SoftPhoneDialViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoftPhoneDialViewController.h; sourceTree = "<group>"; };
+		D026A47B1E80F68100EABB4E /* SoftPhoneDialViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoftPhoneDialViewController.m; sourceTree = "<group>"; };
+		D06A703420EF1A5C00D24770 /* VoipSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VoipSDK.h; sourceTree = "<group>"; };
+		D06A717720EF1C9F00D24770 /* libpj-apple-darwin.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libpj-apple-darwin.a"; sourceTree = "<group>"; };
+		D06A717920EF1C9F00D24770 /* libpjlib-util-apple-darwin.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libpjlib-util-apple-darwin.a"; sourceTree = "<group>"; };
+		D06A717B20EF1C9F00D24770 /* libpjmedia-audiodev.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libpjmedia-audiodev.a"; sourceTree = "<group>"; };
+		D06A717C20EF1C9F00D24770 /* libpjmedia-codec.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libpjmedia-codec.a"; sourceTree = "<group>"; };
+		D06A717D20EF1C9F00D24770 /* libpjmedia-videodev.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libpjmedia-videodev.a"; sourceTree = "<group>"; };
+		D06A717E20EF1C9F00D24770 /* libpjmedia.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libpjmedia.a; sourceTree = "<group>"; };
+		D06A717F20EF1C9F00D24770 /* libpjsdp.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libpjsdp.a; sourceTree = "<group>"; };
+		D06A718120EF1C9F00D24770 /* libpjnath.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libpjnath.a; sourceTree = "<group>"; };
+		D06A718320EF1C9F00D24770 /* libpjsip-simple.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libpjsip-simple.a"; sourceTree = "<group>"; };
+		D06A718420EF1C9F00D24770 /* libpjsip-ua.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libpjsip-ua.a"; sourceTree = "<group>"; };
+		D06A718520EF1C9F00D24770 /* libpjsip.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libpjsip.a; sourceTree = "<group>"; };
+		D06A718620EF1C9F00D24770 /* libpjsua.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libpjsua.a; sourceTree = "<group>"; };
+		D06A718720EF1C9F00D24770 /* libpjsua2.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libpjsua2.a; sourceTree = "<group>"; };
+		D06A718920EF1C9F00D24770 /* libg7221codec.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libg7221codec.a; sourceTree = "<group>"; };
+		D06A718A20EF1C9F00D24770 /* libgsmcodec.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libgsmcodec.a; sourceTree = "<group>"; };
+		D06A718B20EF1C9F00D24770 /* libilbccodec.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libilbccodec.a; sourceTree = "<group>"; };
+		D06A718C20EF1C9F00D24770 /* libresample.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libresample.a; sourceTree = "<group>"; };
+		D06A718D20EF1C9F00D24770 /* libspeex.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libspeex.a; sourceTree = "<group>"; };
+		D06A718E20EF1C9F00D24770 /* libsrtp.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libsrtp.a; sourceTree = "<group>"; };
+		D06A72CE20EF37A100D24770 /* LocalConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocalConnection.h; sourceTree = "<group>"; };
+		D06A72CF20EF37A100D24770 /* LocalConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocalConnection.m; sourceTree = "<group>"; };
+		D06A72D120EF37A100D24770 /* FSMDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSMDefines.h; sourceTree = "<group>"; };
+		D06A72D220EF37A100D24770 /* FSMEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSMEngine.h; sourceTree = "<group>"; };
+		D06A72D320EF37A100D24770 /* FSMEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSMEngine.m; sourceTree = "<group>"; };
+		D06A72D420EF37A100D24770 /* FSMStateUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSMStateUtil.h; sourceTree = "<group>"; };
+		D06A72D520EF37A100D24770 /* FSMStateUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSMStateUtil.m; sourceTree = "<group>"; };
+		D06A72D620EF37A100D24770 /* ReachState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReachState.h; sourceTree = "<group>"; };
+		D06A72D720EF37A100D24770 /* ReachState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReachState.m; sourceTree = "<group>"; };
+		D06A72D820EF37A100D24770 /* ReachStateLoading.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReachStateLoading.h; sourceTree = "<group>"; };
+		D06A72D920EF37A100D24770 /* ReachStateLoading.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReachStateLoading.m; sourceTree = "<group>"; };
+		D06A72DA20EF37A100D24770 /* ReachStateUnloaded.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReachStateUnloaded.h; sourceTree = "<group>"; };
+		D06A72DB20EF37A100D24770 /* ReachStateUnloaded.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReachStateUnloaded.m; sourceTree = "<group>"; };
+		D06A72DC20EF37A100D24770 /* ReachStateUnReachable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReachStateUnReachable.h; sourceTree = "<group>"; };
+		D06A72DD20EF37A100D24770 /* ReachStateUnReachable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReachStateUnReachable.m; sourceTree = "<group>"; };
+		D06A72DE20EF37A100D24770 /* ReachStateWIFI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReachStateWIFI.h; sourceTree = "<group>"; };
+		D06A72DF20EF37A100D24770 /* ReachStateWIFI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReachStateWIFI.m; sourceTree = "<group>"; };
+		D06A72E020EF37A100D24770 /* ReachStateWWAN.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReachStateWWAN.h; sourceTree = "<group>"; };
+		D06A72E120EF37A100D24770 /* ReachStateWWAN.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReachStateWWAN.m; sourceTree = "<group>"; };
+		D06A72E320EF37A100D24770 /* PingFoundation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PingFoundation.h; sourceTree = "<group>"; };
+		D06A72E420EF37A100D24770 /* PingFoundation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PingFoundation.m; sourceTree = "<group>"; };
+		D06A72E520EF37A100D24770 /* PingHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PingHelper.h; sourceTree = "<group>"; };
+		D06A72E620EF37A100D24770 /* PingHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PingHelper.m; sourceTree = "<group>"; };
+		D06A72E720EF37A100D24770 /* RealReachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RealReachability.h; sourceTree = "<group>"; };
+		D06A72E820EF37A100D24770 /* RealReachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RealReachability.m; sourceTree = "<group>"; };
+		D08657A31E713A10003327D5 /* Utility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utility.h; sourceTree = "<group>"; };
+		D08657A41E713A10003327D5 /* Utility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utility.m; sourceTree = "<group>"; };
+		D09814651DE4244E0034F5BA /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		D098148D1DED5C160034F5BA /* icons */ = {isa = PBXFileReference; lastKnownFileType = folder; path = icons; sourceTree = "<group>"; };
+		D09814981DED6AD40034F5BA /* ImageAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageAPI.h; sourceTree = "<group>"; };
+		D09814991DED6AD40034F5BA /* ImageAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageAPI.m; sourceTree = "<group>"; };
+		D098149F1DF550C50034F5BA /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		D0CB186D1DDC497700F344B4 /* VoipSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = VoipSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0CB18721DDC497700F344B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D0CB18771DDC497700F344B4 /* VoipSDKTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VoipSDKTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0CB187C1DDC497700F344B4 /* VoipSDKTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VoipSDKTests.m; sourceTree = "<group>"; };
+		D0CB187E1DDC497700F344B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D0CB1B2F1DDD7BDB00F344B4 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		D0CB1B301DDD7BDB00F344B4 /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
+		D0CB1CAF1DDDA45D00F344B4 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
+		D0CB24981DE3F18200F344B4 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		D0CB249A1DE3F19100F344B4 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		D0CD7B0C1E0A78B100BF619F /* MyCallCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCallCollectionViewCell.h; sourceTree = "<group>"; };
+		D0CD7B0D1E0A78B100BF619F /* MyCallCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyCallCollectionViewCell.m; sourceTree = "<group>"; };
+		D0CD7B0E1E0A78B100BF619F /* MyCallCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyCallCollectionViewCell.xib; sourceTree = "<group>"; };
+		D0F7807720ECD8E500BE7FEE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		D0F7807920ECD99F00BE7FEE /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		D0F7807B20ECD9A800BE7FEE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D0FE4E461E1E3FAD00C9D61F /* libpj-apple-darwin.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libpj-apple-darwin.a"; path = "VoipSDK/PJSIP/libs/pjlib/libpj-apple-darwin.a"; sourceTree = "<group>"; };
+		D0FE4E481E1E3FD900C9D61F /* libpjlib-util-apple-darwin.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libpjlib-util-apple-darwin.a"; path = "VoipSDK/PJSIP/libs/pjlib-util/libpjlib-util-apple-darwin.a"; sourceTree = "<group>"; };
+		D0FE4E4A1E1E3FF000C9D61F /* libpjmedia-audiodev.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libpjmedia-audiodev.a"; path = "VoipSDK/PJSIP/libs/pjmedia/libpjmedia-audiodev.a"; sourceTree = "<group>"; };
+		D0FE4E4B1E1E3FF000C9D61F /* libpjmedia-codec.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libpjmedia-codec.a"; path = "VoipSDK/PJSIP/libs/pjmedia/libpjmedia-codec.a"; sourceTree = "<group>"; };
+		D0FE4E4C1E1E3FF000C9D61F /* libpjmedia-videodev.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libpjmedia-videodev.a"; path = "VoipSDK/PJSIP/libs/pjmedia/libpjmedia-videodev.a"; sourceTree = "<group>"; };
+		D0FE4E4D1E1E3FF000C9D61F /* libpjmedia.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libpjmedia.a; path = VoipSDK/PJSIP/libs/pjmedia/libpjmedia.a; sourceTree = "<group>"; };
+		D0FE4E4E1E1E3FF000C9D61F /* libpjsdp.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libpjsdp.a; path = VoipSDK/PJSIP/libs/pjmedia/libpjsdp.a; sourceTree = "<group>"; };
+		D0FE4E541E1E400000C9D61F /* libpjnath.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libpjnath.a; path = VoipSDK/PJSIP/libs/pjnath/libpjnath.a; sourceTree = "<group>"; };
+		D0FE4E561E1E401500C9D61F /* libpjsip-simple.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libpjsip-simple.a"; path = "VoipSDK/PJSIP/libs/pjsip/libpjsip-simple.a"; sourceTree = "<group>"; };
+		D0FE4E571E1E401500C9D61F /* libpjsip-ua.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libpjsip-ua.a"; path = "VoipSDK/PJSIP/libs/pjsip/libpjsip-ua.a"; sourceTree = "<group>"; };
+		D0FE4E581E1E401500C9D61F /* libpjsip.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libpjsip.a; path = VoipSDK/PJSIP/libs/pjsip/libpjsip.a; sourceTree = "<group>"; };
+		D0FE4E591E1E401500C9D61F /* libpjsua.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libpjsua.a; path = VoipSDK/PJSIP/libs/pjsip/libpjsua.a; sourceTree = "<group>"; };
+		D0FE4E5A1E1E401500C9D61F /* libpjsua2.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libpjsua2.a; path = VoipSDK/PJSIP/libs/pjsip/libpjsua2.a; sourceTree = "<group>"; };
+		D0FE4E601E1E402900C9D61F /* libg7221codec.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libg7221codec.a; path = VoipSDK/PJSIP/libs/third_party/libg7221codec.a; sourceTree = "<group>"; };
+		D0FE4E611E1E402900C9D61F /* libgsmcodec.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libgsmcodec.a; path = VoipSDK/PJSIP/libs/third_party/libgsmcodec.a; sourceTree = "<group>"; };
+		D0FE4E621E1E402900C9D61F /* libilbccodec.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libilbccodec.a; path = VoipSDK/PJSIP/libs/third_party/libilbccodec.a; sourceTree = "<group>"; };
+		D0FE4E631E1E402900C9D61F /* libresample.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libresample.a; path = VoipSDK/PJSIP/libs/third_party/libresample.a; sourceTree = "<group>"; };
+		D0FE4E641E1E402900C9D61F /* libspeex.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libspeex.a; path = VoipSDK/PJSIP/libs/third_party/libspeex.a; sourceTree = "<group>"; };
+		D0FE4E651E1E402900C9D61F /* libsrtp.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libsrtp.a; path = VoipSDK/PJSIP/libs/third_party/libsrtp.a; sourceTree = "<group>"; };
+		D0FE4E7C1E2762B000C9D61F /* IncomingCallViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IncomingCallViewController.h; sourceTree = "<group>"; };
+		D0FE4E7E1E2762B500C9D61F /* IncomingCallViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IncomingCallViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D0CB18691DDC497700F344B4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D06A72BB20EF1CA000D24770 /* libpjmedia-audiodev.a in Frameworks */,
+				D06A72C320EF1CA000D24770 /* libpjsip.a in Frameworks */,
+				D06A72C620EF1CA000D24770 /* libg7221codec.a in Frameworks */,
+				D06A72BD20EF1CA000D24770 /* libpjmedia-videodev.a in Frameworks */,
+				D06A72B920EF1CA000D24770 /* libpj-apple-darwin.a in Frameworks */,
+				D0F7807C20ECD9A800BE7FEE /* Foundation.framework in Frameworks */,
+				D06A72C420EF1CA000D24770 /* libpjsua.a in Frameworks */,
+				D01BF3ED1EEA4E81009302B7 /* SystemConfiguration.framework in Frameworks */,
+				D06A72C120EF1CA000D24770 /* libpjsip-simple.a in Frameworks */,
+				D06A72BC20EF1CA000D24770 /* libpjmedia-codec.a in Frameworks */,
+				D06A72BF20EF1CA000D24770 /* libpjsdp.a in Frameworks */,
+				D06A72CB20EF1CA000D24770 /* libsrtp.a in Frameworks */,
+				D09814661DE4244E0034F5BA /* CFNetwork.framework in Frameworks */,
+				D06A72CA20EF1CA000D24770 /* libspeex.a in Frameworks */,
+				D06A72BE20EF1CA000D24770 /* libpjmedia.a in Frameworks */,
+				D06A72C020EF1CA000D24770 /* libpjnath.a in Frameworks */,
+				D06A72C220EF1CA000D24770 /* libpjsip-ua.a in Frameworks */,
+				D06A72C820EF1CA000D24770 /* libilbccodec.a in Frameworks */,
+				D0CB249B1DE3F19100F344B4 /* AVFoundation.framework in Frameworks */,
+				D06A72C520EF1CA000D24770 /* libpjsua2.a in Frameworks */,
+				D0CB24991DE3F18200F344B4 /* AudioToolbox.framework in Frameworks */,
+				D06A72C920EF1CA000D24770 /* libresample.a in Frameworks */,
+				D06A72C720EF1CA000D24770 /* libgsmcodec.a in Frameworks */,
+				D06A72BA20EF1CA000D24770 /* libpjlib-util-apple-darwin.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0CB18741DDC497700F344B4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0CB18781DDC497700F344B4 /* VoipSDK.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D01BF3EE1EEA4E9F009302B7 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				D01BF3EF1EEA4F06009302B7 /* WiFiUtils.h */,
+				D01BF3F01EEA4F06009302B7 /* WiFiUtils.m */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+		D01DEF421F04944E006C744B /* AES */ = {
+			isa = PBXGroup;
+			children = (
+				D01DEF431F04948D006C744B /* NSData+AES.h */,
+				D01DEF471F0494B3006C744B /* GTMBase64.h */,
+				D01DEF4B1F0494C4006C744B /* GTMDefines.h */,
+				D01DEF491F0494B7006C744B /* GTMBase64.m */,
+				D01DEF451F049492006C744B /* NSData+AES.m */,
+			);
+			name = AES;
+			sourceTree = "<group>";
+		};
+		D06A703620EF1C9F00D24770 /* PJSIP */ = {
+			isa = PBXGroup;
+			children = (
+				D06A717520EF1C9F00D24770 /* libs */,
+			);
+			path = PJSIP;
+			sourceTree = "<group>";
+		};
+		D06A717520EF1C9F00D24770 /* libs */ = {
+			isa = PBXGroup;
+			children = (
+				D06A717620EF1C9F00D24770 /* pjlib */,
+				D06A717820EF1C9F00D24770 /* pjlib-util */,
+				D06A717A20EF1C9F00D24770 /* pjmedia */,
+				D06A718020EF1C9F00D24770 /* pjnath */,
+				D06A718220EF1C9F00D24770 /* pjsip */,
+				D06A718820EF1C9F00D24770 /* third_party */,
+			);
+			path = libs;
+			sourceTree = "<group>";
+		};
+		D06A717620EF1C9F00D24770 /* pjlib */ = {
+			isa = PBXGroup;
+			children = (
+				D06A717720EF1C9F00D24770 /* libpj-apple-darwin.a */,
+			);
+			path = pjlib;
+			sourceTree = "<group>";
+		};
+		D06A717820EF1C9F00D24770 /* pjlib-util */ = {
+			isa = PBXGroup;
+			children = (
+				D06A717920EF1C9F00D24770 /* libpjlib-util-apple-darwin.a */,
+			);
+			path = "pjlib-util";
+			sourceTree = "<group>";
+		};
+		D06A717A20EF1C9F00D24770 /* pjmedia */ = {
+			isa = PBXGroup;
+			children = (
+				D06A717B20EF1C9F00D24770 /* libpjmedia-audiodev.a */,
+				D06A717C20EF1C9F00D24770 /* libpjmedia-codec.a */,
+				D06A717D20EF1C9F00D24770 /* libpjmedia-videodev.a */,
+				D06A717E20EF1C9F00D24770 /* libpjmedia.a */,
+				D06A717F20EF1C9F00D24770 /* libpjsdp.a */,
+			);
+			path = pjmedia;
+			sourceTree = "<group>";
+		};
+		D06A718020EF1C9F00D24770 /* pjnath */ = {
+			isa = PBXGroup;
+			children = (
+				D06A718120EF1C9F00D24770 /* libpjnath.a */,
+			);
+			path = pjnath;
+			sourceTree = "<group>";
+		};
+		D06A718220EF1C9F00D24770 /* pjsip */ = {
+			isa = PBXGroup;
+			children = (
+				D06A718320EF1C9F00D24770 /* libpjsip-simple.a */,
+				D06A718420EF1C9F00D24770 /* libpjsip-ua.a */,
+				D06A718520EF1C9F00D24770 /* libpjsip.a */,
+				D06A718620EF1C9F00D24770 /* libpjsua.a */,
+				D06A718720EF1C9F00D24770 /* libpjsua2.a */,
+			);
+			path = pjsip;
+			sourceTree = "<group>";
+		};
+		D06A718820EF1C9F00D24770 /* third_party */ = {
+			isa = PBXGroup;
+			children = (
+				D06A718920EF1C9F00D24770 /* libg7221codec.a */,
+				D06A718A20EF1C9F00D24770 /* libgsmcodec.a */,
+				D06A718B20EF1C9F00D24770 /* libilbccodec.a */,
+				D06A718C20EF1C9F00D24770 /* libresample.a */,
+				D06A718D20EF1C9F00D24770 /* libspeex.a */,
+				D06A718E20EF1C9F00D24770 /* libsrtp.a */,
+			);
+			path = third_party;
+			sourceTree = "<group>";
+		};
+		D06A72CC20EF37A100D24770 /* RealReachability */ = {
+			isa = PBXGroup;
+			children = (
+				D06A72CD20EF37A100D24770 /* Connection */,
+				D06A72D020EF37A100D24770 /* FSM */,
+				D06A72E220EF37A100D24770 /* Ping */,
+				D06A72E720EF37A100D24770 /* RealReachability.h */,
+				D06A72E820EF37A100D24770 /* RealReachability.m */,
+			);
+			path = RealReachability;
+			sourceTree = "<group>";
+		};
+		D06A72CD20EF37A100D24770 /* Connection */ = {
+			isa = PBXGroup;
+			children = (
+				D06A72CE20EF37A100D24770 /* LocalConnection.h */,
+				D06A72CF20EF37A100D24770 /* LocalConnection.m */,
+			);
+			path = Connection;
+			sourceTree = "<group>";
+		};
+		D06A72D020EF37A100D24770 /* FSM */ = {
+			isa = PBXGroup;
+			children = (
+				D06A72D120EF37A100D24770 /* FSMDefines.h */,
+				D06A72D220EF37A100D24770 /* FSMEngine.h */,
+				D06A72D320EF37A100D24770 /* FSMEngine.m */,
+				D06A72D420EF37A100D24770 /* FSMStateUtil.h */,
+				D06A72D520EF37A100D24770 /* FSMStateUtil.m */,
+				D06A72D620EF37A100D24770 /* ReachState.h */,
+				D06A72D720EF37A100D24770 /* ReachState.m */,
+				D06A72D820EF37A100D24770 /* ReachStateLoading.h */,
+				D06A72D920EF37A100D24770 /* ReachStateLoading.m */,
+				D06A72DA20EF37A100D24770 /* ReachStateUnloaded.h */,
+				D06A72DB20EF37A100D24770 /* ReachStateUnloaded.m */,
+				D06A72DC20EF37A100D24770 /* ReachStateUnReachable.h */,
+				D06A72DD20EF37A100D24770 /* ReachStateUnReachable.m */,
+				D06A72DE20EF37A100D24770 /* ReachStateWIFI.h */,
+				D06A72DF20EF37A100D24770 /* ReachStateWIFI.m */,
+				D06A72E020EF37A100D24770 /* ReachStateWWAN.h */,
+				D06A72E120EF37A100D24770 /* ReachStateWWAN.m */,
+			);
+			path = FSM;
+			sourceTree = "<group>";
+		};
+		D06A72E220EF37A100D24770 /* Ping */ = {
+			isa = PBXGroup;
+			children = (
+				D06A72E320EF37A100D24770 /* PingFoundation.h */,
+				D06A72E420EF37A100D24770 /* PingFoundation.m */,
+				D06A72E520EF37A100D24770 /* PingHelper.h */,
+				D06A72E620EF37A100D24770 /* PingHelper.m */,
+			);
+			path = Ping;
+			sourceTree = "<group>";
+		};
+		D09850291E48624C007B9345 /* floatView */ = {
+			isa = PBXGroup;
+			children = (
+				D015493D1E499E10004642B6 /* FloatingWindow.h */,
+				D015493E1E499E10004642B6 /* FloatingWindow.m */,
+			);
+			name = floatView;
+			sourceTree = "<group>";
+		};
+		D0CB18631DDC497700F344B4 = {
+			isa = PBXGroup;
+			children = (
+				D098149F1DF550C50034F5BA /* CoreTelephony.framework */,
+				D09814651DE4244E0034F5BA /* CFNetwork.framework */,
+				D0CB249A1DE3F19100F344B4 /* AVFoundation.framework */,
+				D0CB24981DE3F18200F344B4 /* AudioToolbox.framework */,
+				D0CB186F1DDC497700F344B4 /* VoipSDK */,
+				D0CB187B1DDC497700F344B4 /* VoipSDKTests */,
+				D0CB186E1DDC497700F344B4 /* Products */,
+				D0FE4E451E1E3FAD00C9D61F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D0CB186E1DDC497700F344B4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D0CB186D1DDC497700F344B4 /* VoipSDK.framework */,
+				D0CB18771DDC497700F344B4 /* VoipSDKTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D0CB186F1DDC497700F344B4 /* VoipSDK */ = {
+			isa = PBXGroup;
+			children = (
+				D06A72CC20EF37A100D24770 /* RealReachability */,
+				D06A703620EF1C9F00D24770 /* PJSIP */,
+				D01DEF421F04944E006C744B /* AES */,
+				D01BF3EE1EEA4E9F009302B7 /* Utils */,
+				D09850291E48624C007B9345 /* floatView */,
+				D098148D1DED5C160034F5BA /* icons */,
+				D0CB18721DDC497700F344B4 /* Info.plist */,
+				D0042F3F1E138A2B0051F721 /* DWRipplesLayer.h */,
+				D0042F401E138A2B0051F721 /* DWRipplesLayer.m */,
+				D0CB1B2F1DDD7BDB00F344B4 /* Constants.h */,
+				D0CB1B301DDD7BDB00F344B4 /* Constants.m */,
+				D0FE4E7C1E2762B000C9D61F /* IncomingCallViewController.h */,
+				D0FE4E7E1E2762B500C9D61F /* IncomingCallViewController.m */,
+				D0CB1CAF1DDDA45D00F344B4 /* Storyboard.storyboard */,
+				D09814981DED6AD40034F5BA /* ImageAPI.h */,
+				D09814991DED6AD40034F5BA /* ImageAPI.m */,
+				D0CD7B0C1E0A78B100BF619F /* MyCallCollectionViewCell.h */,
+				D0CD7B0D1E0A78B100BF619F /* MyCallCollectionViewCell.m */,
+				D0CD7B0E1E0A78B100BF619F /* MyCallCollectionViewCell.xib */,
+				D0042F241E0BC5670051F721 /* RGBColorAPI.h */,
+				D0042F491E13AEE80051F721 /* MobileAPI.h */,
+				D0042F4A1E13AEE80051F721 /* MobileAPI.m */,
+				D01045E51E27750200CFB317 /* VoipSDK.pch */,
+				D06A703420EF1A5C00D24770 /* VoipSDK.h */,
+				D08657A31E713A10003327D5 /* Utility.h */,
+				D08657A41E713A10003327D5 /* Utility.m */,
+				D026A46F1E76936E00EABB4E /* PjsipManager.h */,
+				D026A4701E76936E00EABB4E /* PjsipManager.m */,
+				D026A4761E7FD6A300EABB4E /* MyPjsipService.h */,
+				D026A4771E7FD6A300EABB4E /* MyPjsipService.m */,
+				D026A47A1E80F68100EABB4E /* SoftPhoneDialViewController.h */,
+				D026A47B1E80F68100EABB4E /* SoftPhoneDialViewController.m */,
+			);
+			path = VoipSDK;
+			sourceTree = "<group>";
+		};
+		D0CB187B1DDC497700F344B4 /* VoipSDKTests */ = {
+			isa = PBXGroup;
+			children = (
+				D0CB187C1DDC497700F344B4 /* VoipSDKTests.m */,
+				D0CB187E1DDC497700F344B4 /* Info.plist */,
+			);
+			path = VoipSDKTests;
+			sourceTree = "<group>";
+		};
+		D0FE4E451E1E3FAD00C9D61F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D0F7807B20ECD9A800BE7FEE /* Foundation.framework */,
+				D0F7807920ECD99F00BE7FEE /* CoreFoundation.framework */,
+				D0F7807720ECD8E500BE7FEE /* UIKit.framework */,
+				D01BF3EC1EEA4E81009302B7 /* SystemConfiguration.framework */,
+				D0FE4E601E1E402900C9D61F /* libg7221codec.a */,
+				D0FE4E611E1E402900C9D61F /* libgsmcodec.a */,
+				D0FE4E621E1E402900C9D61F /* libilbccodec.a */,
+				D0FE4E631E1E402900C9D61F /* libresample.a */,
+				D0FE4E641E1E402900C9D61F /* libspeex.a */,
+				D0FE4E651E1E402900C9D61F /* libsrtp.a */,
+				D0FE4E561E1E401500C9D61F /* libpjsip-simple.a */,
+				D0FE4E571E1E401500C9D61F /* libpjsip-ua.a */,
+				D0FE4E581E1E401500C9D61F /* libpjsip.a */,
+				D0FE4E591E1E401500C9D61F /* libpjsua.a */,
+				D0FE4E5A1E1E401500C9D61F /* libpjsua2.a */,
+				D0FE4E541E1E400000C9D61F /* libpjnath.a */,
+				D0FE4E4A1E1E3FF000C9D61F /* libpjmedia-audiodev.a */,
+				D0FE4E4B1E1E3FF000C9D61F /* libpjmedia-codec.a */,
+				D0FE4E4C1E1E3FF000C9D61F /* libpjmedia-videodev.a */,
+				D0FE4E4D1E1E3FF000C9D61F /* libpjmedia.a */,
+				D0FE4E4E1E1E3FF000C9D61F /* libpjsdp.a */,
+				D0FE4E481E1E3FD900C9D61F /* libpjlib-util-apple-darwin.a */,
+				D0FE4E461E1E3FAD00C9D61F /* libpj-apple-darwin.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		D0CB186A1DDC497700F344B4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D01DEF4C1F0494C4006C744B /* GTMDefines.h in Headers */,
+				D06A703520EF1A5C00D24770 /* VoipSDK.h in Headers */,
+				D026A4711E76936E00EABB4E /* PjsipManager.h in Headers */,
+				D01BF3F11EEA4F06009302B7 /* WiFiUtils.h in Headers */,
+				D026A4781E7FD6A300EABB4E /* MyPjsipService.h in Headers */,
+				D01DEF481F0494B3006C744B /* GTMBase64.h in Headers */,
+				D026A47C1E80F68100EABB4E /* SoftPhoneDialViewController.h in Headers */,
+				D0CD7B0F1E0A78B100BF619F /* MyCallCollectionViewCell.h in Headers */,
+				D0CB1B311DDD7BDB00F344B4 /* Constants.h in Headers */,
+				D06A72EC20EF37A100D24770 /* FSMEngine.h in Headers */,
+				D06A72F420EF37A100D24770 /* ReachStateUnloaded.h in Headers */,
+				D015493F1E499E10004642B6 /* FloatingWindow.h in Headers */,
+				D06A72FE20EF37A100D24770 /* PingHelper.h in Headers */,
+				D06A730020EF37A100D24770 /* RealReachability.h in Headers */,
+				D0042F4B1E13AEE90051F721 /* MobileAPI.h in Headers */,
+				D06A72EE20EF37A100D24770 /* FSMStateUtil.h in Headers */,
+				D08657A51E713A10003327D5 /* Utility.h in Headers */,
+				D06A72E920EF37A100D24770 /* LocalConnection.h in Headers */,
+				D0042F411E138A2B0051F721 /* DWRipplesLayer.h in Headers */,
+				D06A72F220EF37A100D24770 /* ReachStateLoading.h in Headers */,
+				D06A72F020EF37A100D24770 /* ReachState.h in Headers */,
+				D06A72FA20EF37A100D24770 /* ReachStateWWAN.h in Headers */,
+				D06A72F820EF37A100D24770 /* ReachStateWIFI.h in Headers */,
+				D0FE4E7D1E2762B000C9D61F /* IncomingCallViewController.h in Headers */,
+				D01DEF441F04948D006C744B /* NSData+AES.h in Headers */,
+				D098149A1DED6AD40034F5BA /* ImageAPI.h in Headers */,
+				D06A72EB20EF37A100D24770 /* FSMDefines.h in Headers */,
+				D06A72F620EF37A100D24770 /* ReachStateUnReachable.h in Headers */,
+				D0042F261E0BC5670051F721 /* RGBColorAPI.h in Headers */,
+				D06A72FC20EF37A100D24770 /* PingFoundation.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		D0CB186C1DDC497700F344B4 /* VoipSDK */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D0CB18811DDC497700F344B4 /* Build configuration list for PBXNativeTarget "VoipSDK" */;
+			buildPhases = (
+				D0CB18681DDC497700F344B4 /* Sources */,
+				D0CB18691DDC497700F344B4 /* Frameworks */,
+				D0CB186A1DDC497700F344B4 /* Headers */,
+				D0CB186B1DDC497700F344B4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VoipSDK;
+			productName = VoipSDK;
+			productReference = D0CB186D1DDC497700F344B4 /* VoipSDK.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D0CB18761DDC497700F344B4 /* VoipSDKTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D0CB18841DDC497700F344B4 /* Build configuration list for PBXNativeTarget "VoipSDKTests" */;
+			buildPhases = (
+				D0CB18731DDC497700F344B4 /* Sources */,
+				D0CB18741DDC497700F344B4 /* Frameworks */,
+				D0CB18751DDC497700F344B4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D0CB187A1DDC497700F344B4 /* PBXTargetDependency */,
+			);
+			name = VoipSDKTests;
+			productName = VoipSDKTests;
+			productReference = D0CB18771DDC497700F344B4 /* VoipSDKTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D0CB18641DDC497700F344B4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = ctrip;
+				TargetAttributes = {
+					D0A04D6920E4B16C00749A7B = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+					D0CB186C1DDC497700F344B4 = {
+						CreatedOnToolsVersion = 7.2;
+						ProvisioningStyle = Manual;
+					};
+					D0CB18761DDC497700F344B4 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = ASK65W72K5;
+					};
+				};
+			};
+			buildConfigurationList = D0CB18671DDC497700F344B4 /* Build configuration list for PBXProject "VoipSDK" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D0CB18631DDC497700F344B4;
+			productRefGroup = D0CB186E1DDC497700F344B4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D0CB186C1DDC497700F344B4 /* VoipSDK */,
+				D0CB18761DDC497700F344B4 /* VoipSDKTests */,
+				D0A04D6920E4B16C00749A7B /* voipFramework */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D0CB186B1DDC497700F344B4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0CB1CB01DDDA45D00F344B4 /* Storyboard.storyboard in Resources */,
+				D0CD7B111E0A78B100BF619F /* MyCallCollectionViewCell.xib in Resources */,
+				D098148E1DED5C160034F5BA /* icons in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0CB18751DDC497700F344B4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D0A04D6D20E4B17300749A7B /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Sets the target folders and the final framework product.\n# 如果工程名称和Framework的Target名称不一样的话，要自定义FMKNAME\n# 例如: FMK_NAME = \"MyFramework\"\nFMK_NAME=${PROJECT_NAME}\n# Install dir will be the final output to the framework.\n# The following line create it in the root folder of the current project.\nINSTALL_DIR=${SRCROOT}/Products/${FMK_NAME}.framework\n# Working dir will be deleted after the framework creation.\nWRK_DIR=build\nDEVICE_DIR=${WRK_DIR}/Release-iphoneos/${FMK_NAME}.framework\nSIMULATOR_DIR=${WRK_DIR}/Release-iphonesimulator/${FMK_NAME}.framework\n# -configuration ${CONFIGURATION}\n# Clean and Building both architectures.\nxcodebuild -configuration \"Release\" -target \"${FMK_NAME}\" -sdk iphoneos clean build\nxcodebuild -configuration \"Release\" -target \"${FMK_NAME}\" -sdk iphonesimulator clean build\n# Cleaning the oldest.\nif [ -d \"${INSTALL_DIR}\" ]\nthen\nrm -rf \"${INSTALL_DIR}\"\nfi\nmkdir -p \"${INSTALL_DIR}\"\ncp -R \"${DEVICE_DIR}/\" \"${INSTALL_DIR}/\"\n# Uses the Lipo Tool to merge both binary files (i386 + armv6/armv7) into one Universal final product.\nlipo -create \"${DEVICE_DIR}/${FMK_NAME}\" \"${SIMULATOR_DIR}/${FMK_NAME}\" -output \"${INSTALL_DIR}/${FMK_NAME}\"\nrm -r \"${WRK_DIR}\"\nopen \"${INSTALL_DIR}\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D0CB18681DDC497700F344B4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D06A72FD20EF37A100D24770 /* PingFoundation.m in Sources */,
+				D098149B1DED6AD40034F5BA /* ImageAPI.m in Sources */,
+				D08657A61E713A10003327D5 /* Utility.m in Sources */,
+				D06A72ED20EF37A100D24770 /* FSMEngine.m in Sources */,
+				D06A730120EF37A100D24770 /* RealReachability.m in Sources */,
+				D06A72FB20EF37A100D24770 /* ReachStateWWAN.m in Sources */,
+				D01DEF4A1F0494B7006C744B /* GTMBase64.m in Sources */,
+				D0042F421E138A2B0051F721 /* DWRipplesLayer.m in Sources */,
+				D01BF3F21EEA4F06009302B7 /* WiFiUtils.m in Sources */,
+				D01DEF461F049492006C744B /* NSData+AES.m in Sources */,
+				D06A72FF20EF37A100D24770 /* PingHelper.m in Sources */,
+				D06A72F520EF37A100D24770 /* ReachStateUnloaded.m in Sources */,
+				D06A72EA20EF37A100D24770 /* LocalConnection.m in Sources */,
+				D026A4791E7FD6A300EABB4E /* MyPjsipService.m in Sources */,
+				D06A72F120EF37A100D24770 /* ReachState.m in Sources */,
+				D06A72F320EF37A100D24770 /* ReachStateLoading.m in Sources */,
+				D01549401E499E10004642B6 /* FloatingWindow.m in Sources */,
+				D0CD7B101E0A78B100BF619F /* MyCallCollectionViewCell.m in Sources */,
+				D026A4721E76936E00EABB4E /* PjsipManager.m in Sources */,
+				D0CB1B321DDD7BDB00F344B4 /* Constants.m in Sources */,
+				D06A72EF20EF37A100D24770 /* FSMStateUtil.m in Sources */,
+				D026A47D1E80F68100EABB4E /* SoftPhoneDialViewController.m in Sources */,
+				D0FE4E7F1E2762B500C9D61F /* IncomingCallViewController.m in Sources */,
+				D06A72F720EF37A100D24770 /* ReachStateUnReachable.m in Sources */,
+				D06A72F920EF37A100D24770 /* ReachStateWIFI.m in Sources */,
+				D0042F4C1E13AEE90051F721 /* MobileAPI.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0CB18731DDC497700F344B4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0CB187D1DDC497700F344B4 /* VoipSDKTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D0CB187A1DDC497700F344B4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D0CB186C1DDC497700F344B4 /* VoipSDK */;
+			targetProxy = D0CB18791DDC497700F344B4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		D0A04D6B20E4B16E00749A7B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D0A04D6C20E4B16E00749A7B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		D0CB187F1DDC497700F344B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = NO;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D0CB18801DDC497700F344B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = NO;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D0CB18821DDC497700F344B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/VoipSDK.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+					"PJ_AUTOCONF=1",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(PROJECT_DIR)/VoipSDK/PJSIP/includes/pjlib",
+					"$(PROJECT_DIR)/VoipSDK/PJSIP/includes/pjmedia",
+					"$(PROJECT_DIR)/VoipSDK/PJSIP/includes/pjnath",
+					"$(PROJECT_DIR)/VoipSDK/PJSIP/includes/pjsip",
+					"$(PROJECT_DIR)/VoipSDK/PJSIP/includes/pjlib-util",
+				);
+				INFOPLIST_FILE = VoipSDK/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/VoipSDK/PJSIP/libs/pjlib",
+					"$(PROJECT_DIR)/VoipSDK/PJSIP/libs/pjlib-util",
+					"$(PROJECT_DIR)/VoipSDK/PJSIP/libs/pjmedia",
+					"$(PROJECT_DIR)/VoipSDK/PJSIP/libs/pjnath",
+					"$(PROJECT_DIR)/VoipSDK/PJSIP/libs/pjsip",
+					"$(PROJECT_DIR)/VoipSDK/PJSIP/libs/third_party",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-w",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ctrip.cc.voip;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D0CB18831DDC497700F344B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/VoipSDK.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = "PJ_AUTOCONF=1";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(PROJECT_DIR)/VoipSDK/PJSIP/includes/pjlib",
+					"$(PROJECT_DIR)/VoipSDK/PJSIP/includes/pjmedia",
+					"$(PROJECT_DIR)/VoipSDK/PJSIP/includes/pjnath",
+					"$(PROJECT_DIR)/VoipSDK/PJSIP/includes/pjsip",
+					"$(PROJECT_DIR)/VoipSDK/PJSIP/includes/pjlib-util",
+				);
+				INFOPLIST_FILE = VoipSDK/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/VoipSDK/PJSIP/libs/pjlib",
+					"$(PROJECT_DIR)/VoipSDK/PJSIP/libs/pjlib-util",
+					"$(PROJECT_DIR)/VoipSDK/PJSIP/libs/pjmedia",
+					"$(PROJECT_DIR)/VoipSDK/PJSIP/libs/pjnath",
+					"$(PROJECT_DIR)/VoipSDK/PJSIP/libs/pjsip",
+					"$(PROJECT_DIR)/VoipSDK/PJSIP/libs/third_party",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-w",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ctrip.cc.voip;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D0CB18851DDC497700F344B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = VoipSDKTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.VoipSDKTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D0CB18861DDC497700F344B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = VoipSDKTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.VoipSDKTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D0A04D6A20E4B16E00749A7B /* Build configuration list for PBXAggregateTarget "voipFramework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0A04D6B20E4B16E00749A7B /* Debug */,
+				D0A04D6C20E4B16E00749A7B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D0CB18671DDC497700F344B4 /* Build configuration list for PBXProject "VoipSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0CB187F1DDC497700F344B4 /* Debug */,
+				D0CB18801DDC497700F344B4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D0CB18811DDC497700F344B4 /* Build configuration list for PBXNativeTarget "VoipSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0CB18821DDC497700F344B4 /* Debug */,
+				D0CB18831DDC497700F344B4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D0CB18841DDC497700F344B4 /* Build configuration list for PBXNativeTarget "VoipSDKTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0CB18851DDC497700F344B4 /* Debug */,
+				D0CB18861DDC497700F344B4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D0CB18641DDC497700F344B4 /* Project object */;
+}
