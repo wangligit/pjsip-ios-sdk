@@ -87,6 +87,8 @@
 		D06A72FF20EF37A100D24770 /* PingHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = D06A72E620EF37A100D24770 /* PingHelper.m */; };
 		D06A730020EF37A100D24770 /* RealReachability.h in Headers */ = {isa = PBXBuildFile; fileRef = D06A72E720EF37A100D24770 /* RealReachability.h */; };
 		D06A730120EF37A100D24770 /* RealReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = D06A72E820EF37A100D24770 /* RealReachability.m */; };
+		D07B21B121009B7D000F5737 /* ConnectedViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = D07B21B021009B7D000F5737 /* ConnectedViewController.h */; };
+		D07B21B321009B88000F5737 /* ConnectedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D07B21B221009B88000F5737 /* ConnectedViewController.m */; };
 		D08657A51E713A10003327D5 /* Utility.h in Headers */ = {isa = PBXBuildFile; fileRef = D08657A31E713A10003327D5 /* Utility.h */; };
 		D08657A61E713A10003327D5 /* Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = D08657A41E713A10003327D5 /* Utility.m */; };
 		D09814661DE4244E0034F5BA /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D09814651DE4244E0034F5BA /* CFNetwork.framework */; };
@@ -186,6 +188,8 @@
 		D06A72E620EF37A100D24770 /* PingHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PingHelper.m; sourceTree = "<group>"; };
 		D06A72E720EF37A100D24770 /* RealReachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RealReachability.h; sourceTree = "<group>"; };
 		D06A72E820EF37A100D24770 /* RealReachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RealReachability.m; sourceTree = "<group>"; };
+		D07B21B021009B7D000F5737 /* ConnectedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConnectedViewController.h; sourceTree = "<group>"; };
+		D07B21B221009B88000F5737 /* ConnectedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConnectedViewController.m; sourceTree = "<group>"; };
 		D08657A31E713A10003327D5 /* Utility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utility.h; sourceTree = "<group>"; };
 		D08657A41E713A10003327D5 /* Utility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utility.m; sourceTree = "<group>"; };
 		D09814651DE4244E0034F5BA /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
@@ -477,6 +481,8 @@
 				D098148D1DED5C160034F5BA /* icons */,
 				D0CB18721DDC497700F344B4 /* Info.plist */,
 				D0042F3F1E138A2B0051F721 /* DWRipplesLayer.h */,
+				D07B21B021009B7D000F5737 /* ConnectedViewController.h */,
+				D07B21B221009B88000F5737 /* ConnectedViewController.m */,
 				D0042F401E138A2B0051F721 /* DWRipplesLayer.m */,
 				D0CB1B2F1DDD7BDB00F344B4 /* Constants.h */,
 				D0CB1B301DDD7BDB00F344B4 /* Constants.m */,
@@ -563,6 +569,7 @@
 				D06A72EC20EF37A100D24770 /* FSMEngine.h in Headers */,
 				D06A72F420EF37A100D24770 /* ReachStateUnloaded.h in Headers */,
 				D015493F1E499E10004642B6 /* FloatingWindow.h in Headers */,
+				D07B21B121009B7D000F5737 /* ConnectedViewController.h in Headers */,
 				D06A72FE20EF37A100D24770 /* PingHelper.h in Headers */,
 				D06A730020EF37A100D24770 /* RealReachability.h in Headers */,
 				D0042F4B1E13AEE90051F721 /* MobileAPI.h in Headers */,
@@ -720,6 +727,7 @@
 				D06A72F520EF37A100D24770 /* ReachStateUnloaded.m in Sources */,
 				D06A72EA20EF37A100D24770 /* LocalConnection.m in Sources */,
 				D026A4791E7FD6A300EABB4E /* MyPjsipService.m in Sources */,
+				D07B21B321009B88000F5737 /* ConnectedViewController.m in Sources */,
 				D06A72F120EF37A100D24770 /* ReachState.m in Sources */,
 				D06A72F320EF37A100D24770 /* ReachStateLoading.m in Sources */,
 				D01549401E499E10004642B6 /* FloatingWindow.m in Sources */,

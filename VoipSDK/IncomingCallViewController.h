@@ -8,10 +8,11 @@
 
 #import <UIKit/UIKit.h>
 #import "Constants.h"
+#import "FloatingWindow.h"
 @interface IncomingCallViewController : UIViewController
 
 @property (nonatomic, copy) NSString *phoneNumber;
 @property (nonatomic, assign) NSInteger callId;
 @property (nonatomic, copy) NSString *displayName;
-@property (nonatomic) int flag;
+@property(strong, nonatomic)FloatingWindow *floatWindow;
 @end

@@ -225,9 +225,9 @@
             incomingViewController.displayName = userName;
             incomingViewController.phoneNumber = callNumber;
             incomingViewController.callId = callid;
-            incomingViewController.flag=1;
-            [vc presentViewController:incomingViewController animated:YES completion:^{
-            }];
+            UINavigationController *navigationcontoller = [[UINavigationController alloc]initWithRootViewController:incomingViewController];
+            navigationcontoller.navigationBar.hidden = YES;
+            [vc presentViewController:navigationcontoller animated:YES completion:nil];
         }
     });
 }
