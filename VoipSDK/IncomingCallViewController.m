@@ -62,6 +62,7 @@
     appview.tagImg.image = [ImageAPI imageWithName:[CellImgName objectAtIndex:0]];
     appview.tagLabel.frame = CGRectMake(kScreenWidth/4-50/2, dr+10, 50, 20);//width/6-50/2, 68, 50, 20
     appview.tagLabel.text = [CellTitleName objectAtIndex:0];
+    appview.tagBtn.frame = CGRectMake(kScreenWidth/4-dr/2, 8, dr, dr+30);
     appview.layer.borderWidth = 0.0f;
      //-----------------------添加接听按钮------------------------
     MyCallCollectionViewCell  *appview2=[[[NSBundle bundleForClass:[self class]]loadNibNamed:@"MyCallCollectionViewCell" owner:nil options:nil] firstObject];
@@ -71,6 +72,7 @@
     appview2.tagImg.image = [ImageAPI imageWithName:[CellImgName objectAtIndex:1]];
     appview2.tagLabel.frame = CGRectMake(kScreenWidth/4-50/2, dr+10, 50, 20);//width/6-50/2, 68, 50, 20
     appview2.tagLabel.text = [CellTitleName objectAtIndex:1];
+    appview2.tagBtn.frame = CGRectMake(kScreenWidth/4-dr/2, 8, dr, dr+30);
     appview2.layer.borderWidth = 0.0f;
     //-----------------------添加最小化按钮------------------------
     MyCallCollectionViewCell  *appview3=[[[NSBundle bundleForClass:[self class]]loadNibNamed:@"MyCallCollectionViewCell" owner:nil options:nil] firstObject];
